@@ -13,3 +13,14 @@ title: Group name
   Where to find us.
 </p>
 </section>
+<section>
+<h2>News from the group</h2>
+
+{% for post in site.posts %}
+<article>
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <p>{{ post.excerpt }}</p>
+</article>
+{% endfor %}
+
+</section>
