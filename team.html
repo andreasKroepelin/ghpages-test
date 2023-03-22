@@ -1,0 +1,12 @@
+---
+layout: default
+title: Team
+---
+
+
+{% for member in site.team %}
+<article>
+  <strong>{{ member.name }}</strong><br>
+  {{ member.role }}
+</article>
+{% endfor %}
