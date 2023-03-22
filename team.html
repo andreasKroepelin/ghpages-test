@@ -5,8 +5,15 @@ title: Team
 
 
 {% for member in site.team %}
+<a href="{{ member.url }}">
 <article>
-  <strong>{{ member.name }}</strong><br>
-  {{ member.role }}
+  <div style="display: flex;">
+    <img src="{{ member.imgpath }}" style="width: 3em;">
+    <div>
+      <strong>{{ member.name }}</strong><br>
+      {{ member.role }}
+    </div>
+  </div>
 </article>
+</a>
 {% endfor %}
