@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.classless.min.css">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1>Group name</h1>
+        <h3>Institution</h3>
+      </hgroup>
+
+      <nav>
+        <ul>
+          <li><a href="/">News</a></li>
+          <li><a href="/">Team</a></li>
+          <li><a href="/">Lectures</a></li>
+          <li><a href="/">Research</a></li>
+        </ul>
+        <ul>
+          <li><a href="github.com">Our GitHub</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <hr>
+      <small>Copyright note</small>
+    </footer>
+  </body>
+</html>
