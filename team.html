@@ -9,7 +9,7 @@ title: Team
 {% for member in site.team %}
 <a href="{{ member.url | relative_url }}" class="undecorated">
 <article class="team-panel">
-  <img src="{{ member.imgpath }}">
+  <img src="{{ member.imgpath | relative_url }}">
   <div>
       <strong>{{ member.name }}</strong><br>
       <em>{{ member.role }}</em><br>
