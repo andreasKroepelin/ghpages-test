@@ -29,3 +29,10 @@ header[data-theme="dark"] {
   grid-column-gap: .5em;
   margin: 0;
 }
+
+.about {
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(20em, 1fr) );
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+}
