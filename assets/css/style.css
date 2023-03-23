@@ -27,4 +27,5 @@ header[data-theme="dark"] {
   display: grid;
   grid-template-columns: 5em auto;
   grid-column-gap: .5em;
+  margin: 0;
 }
