@@ -1,0 +1,21 @@
+:root {
+  --spacing: .2rem;
+  --background-color: #eff1f5;
+}
+
+a.undecorated {
+  text-decoration: none;
+  color: inherit;
+}
+
+header[data-theme="dark"] {
+  /* Image by https://pixabay.com/users/geralt-9301/ (Gerd Altmann) from Pixabay */
+  background-image: url("assets/bacteria.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(5em, 1fr) );
+}
