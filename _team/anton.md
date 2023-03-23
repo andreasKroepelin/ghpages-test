@@ -1,7 +1,7 @@
 ---
 name: Anton
 role: Chair
-imgpath: /ghpages-test/assets/anton.jpg
+imgpath: /assets/anton.jpg
 teaser: Finds numbers with more than 70 digits
 layout: member
 ---

@@ -7,7 +7,7 @@ title: Team
 
 <div class="team-grid">
 {% for member in site.team %}
-<a href="/ghpages-test{{ member.url }}" class="undecorated">
+<a href="{{ member.url | relative_url }}" class="undecorated">
 <article class="team-panel">
   <img src="{{ member.imgpath }}">
   <div>

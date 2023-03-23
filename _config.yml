@@ -5,3 +5,4 @@ collections:
     output: true
   projects:
     output: true
+baseurl: "/ghpages-test"

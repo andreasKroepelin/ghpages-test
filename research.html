@@ -14,7 +14,7 @@ title: Research
 {% for project in site.projects %}
 {% if project.state == "current" %}
 <li>
-  <a href="/ghpages-test{{ project.url }}">
+  <a href="{{ project.url | relative_url }}">
   {{ project.name }}
   </a>
   ({{ project.when }})
@@ -30,7 +30,7 @@ title: Research
 {% for project in site.projects %}
 {% if project.state == "old" %}
 <li>
-  <a href="/ghpages-test{{ project.url }}">
+  <a href="{{ project.url | relative_url }}">
   {{ project.name }}
   </a>
   ({{ project.when }})

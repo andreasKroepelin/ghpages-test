@@ -14,7 +14,7 @@ title: Teaching
 {% for lecture in site.lectures %}
 {% if lecture.state == "current" %}
 <li>
-  <a href="/ghpages-test{{ lecture.url }}">
+  <a href="{{ lecture.url | relative_url }}">
   {{ lecture.name }}
   </a>
   ({{ lecture.when }})
@@ -33,7 +33,7 @@ title: Teaching
 {% for lecture in site.lectures %}
 {% if lecture.state == "planned" %}
 <li>
-  <a href="/ghpages-test{{ lecture.url }}">
+  <a href="{{ lecture.url | relative_url }}">
   {{ lecture.name }}
   </a>
   ({{ lecture.when }})
@@ -52,7 +52,7 @@ title: Teaching
 {% for lecture in site.lectures %}
 {% if lecture.state == "old" %}
 <li>
-  <a href="/ghpages-test{{ lecture.url }}">
+  <a href="{{ lecture.url | relative_url }}">
   {{ lecture.name }}
   </a>
   ({{ lecture.when }})

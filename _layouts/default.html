@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
-    <link rel="stylesheet" href="/ghpages-test/assets/css/style.css">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
     <title>{{ page.title }}</title>
   </head>
   <body>
@@ -12,21 +12,21 @@
     <div class="container">
       <nav>
         <ul>
-          <li><a href="/ghpages-test/team">Team</a></li>
-          <li><a href="/ghpages-test/research">Research</a></li>
-          <li><a href="/ghpages-test/teaching">Teaching</a></li>
+          <li><a href="{{ "/team" | relative_url }}">Team</a></li>
+          <li><a href="{{ "/research" | relative_url }}">Research</a></li>
+          <li><a href="{{ "/teaching" | relative_url }}">Teaching</a></li>
         </ul>
         <ul>
           <li>
             <a href="https://github.com">
-              <img style="width: 1em;" src="/ghpages-test/assets/github-mark-white.svg"></img>
+              <img style="width: 1em;" src="{{ "/assets/github-mark-white.svg" | reative_url }}"></img>
             </a>
           </li>
         </ul>
       </nav>
 
       <hgroup>
-        <h1><a href="/ghpages-test" class="undecorated">Group name</a></h1>
+        <h1><a href="{{ base_url }}" class="undecorated">Group name</a></h1>
         <h3>Institution</h3>
       </hgroup>
     </div>
