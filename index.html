@@ -28,12 +28,13 @@ title: Group name
 <h3 id="news">News from the group</h3>
 
 {% for post in site.posts %}
-<a href="/ghpages-test{{ post.url }}" class="undecorated">
 <article>
   <h3>{{ post.title }}</h3>
-  <p>{{ post.excerpt }}<br>&hellip;</p>
+  {{ post.excerpt }}
+  <a href="/ghpages-test{{ post.url }}">
+    More&hellip;
+  </a>
 </article>
-</a>
 {% endfor %}
 
 </section>
