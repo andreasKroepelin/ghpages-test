@@ -1,0 +1,44 @@
+---
+layout: default
+title: Research
+---
+
+<section>
+<h2>Research projects</h2>
+<p>
+  Here are some of the projects members of this group work and have wored on.
+</p>
+
+<h3>Current projects</h3>
+<ul>
+{% for project in site.projects %}
+{% if project.state == "current" %}
+<li>
+  <a href="/ghpages-test{{ project.url }}">
+  {{ project.name }}
+  </a>
+  ({{ lecture.when }})
+</li>
+{% endif %}
+{% else %}
+<li><em>none</em></li>
+{% endfor %}
+</ul>
+
+<h3>Completed projects</h3>
+<ul>
+{% for project in site.projects %}
+{% if project.state == "old" %}
+<li>
+  <a href="/ghpages-test{{ project.url }}">
+  {{ project.name }}
+  </a>
+  ({{ project.when }})
+</li>
+{% endif %}
+{% else %}
+<li><em>none</em></li>
+{% endfor %}
+</ul>
+
+</section>
