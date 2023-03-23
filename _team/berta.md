@@ -13,7 +13,7 @@ layout: member
   Thesis: "On the number 1250896146"
 - 2009: **M.Sc. Advanced Number Studies** \
   University of Numbers
-- 2008: **B.Sc. Counting without Fingers**
+- 2008: **B.Sc. Counting without Fingers** \
   University of Digits
 
 ## Publications  
