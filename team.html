@@ -5,10 +5,10 @@ title: Team
 
 
 {% for member in site.team %}
-<a href="{{ member.url }}">
+<a href="{{ member.url }}" style="text-decoration: none; color: inherit;">
 <article>
   <div style="display: flex;">
-    <img src="{{ member.imgpath }}" style="width: 3em;">
+    <img src="{{ member.imgpath }}" style="width: 3em; margin-right: .5em;">
     <div>
       <strong>{{ member.name }}</strong><br>
       {{ member.role }}
