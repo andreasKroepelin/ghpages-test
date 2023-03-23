@@ -8,14 +8,12 @@ title: Team
 <div class="team-grid">
 {% for member in site.team %}
 <a href="{{ member.url }}" class="undecorated">
-<article>
-  <div style="display: flex;">
-    <img src="{{ member.imgpath }}" style="width: 5em; margin-right: .5em;">
-    <div>
+<article class="team-panel">
+  <img src="{{ member.imgpath }}" style="margin-right: .5em;">
+  <div>
       <strong>{{ member.name }}</strong><br>
       <em>{{ member.role }}</em><br>
       {{ member.teaser }}
-    </div>
   </div>
 </article>
 </a>
