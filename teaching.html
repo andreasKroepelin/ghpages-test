@@ -1,0 +1,63 @@
+---
+layout: default
+title: Teaching
+---
+
+<section>
+<h2>Lectures</h2>
+<p>
+  We offer various lectures and seminars regarding numbers.
+</p>
+
+<h3>Current lectures</h3>
+<ul>
+{% for lecture in site.lectures %}
+{% if lecture.state == "current" %}
+<li>
+  <a href="{{ lecture.url }}" class="undecorated">
+  {{ lecture.name }}
+  </a>
+  ({{ lecture.when }})
+</li>
+{% else %}
+<li><em>none</em></li>
+{% endfor %}
+</ul>
+
+<h3>Planned lectures</h3>
+<p>
+  These lectures are not offered this semester but will be in the future:
+</p>
+<ul>
+{% for lecture in site.lectures %}
+{% if lecture.state == "planned" %}
+<li>
+  <a href="{{ lecture.url }}" class="undecorated">
+  {{ lecture.name }}
+  </a>
+  ({{ lecture.when }})
+</li>
+{% else %}
+<li><em>none</em></li>
+{% endfor %}
+</ul>
+
+<h3>Old lectures</h3>
+<p>
+  These lectures are not offered anymore but have been in the past:
+</p>
+<ul>
+{% for lecture in site.lectures %}
+{% if lecture.state == "old" %}
+<li>
+  <a href="{{ lecture.url }}" class="undecorated">
+  {{ lecture.name }}
+  </a>
+  ({{ lecture.when }})
+</li>
+{% else %}
+<li><em>none</em></li>
+{% endfor %}
+</ul>
+
+</section>
