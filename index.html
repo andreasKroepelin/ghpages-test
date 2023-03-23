@@ -27,7 +27,7 @@ title: Group name
 
 {% for post in site.posts %}
 <article>
-  <h3><a href="/ghpages-test/{{ post.url }}">{{ post.title }}</a></h3>
+  <h3><a href="/ghpages-test{{ post.url }}">{{ post.title }}</a></h3>
   <p>{{ post.excerpt }}</p>
 </article>
 {% endfor %}
