@@ -8,11 +8,13 @@
     <style>
       :root {
         --spacing: .2rem;
+        --background-color: #eff1f5;
       }
     </style>
   </head>
   <body>
-    <header>
+    <header style="background-color: #dce0e8">
+    <div class="container">
       <hgroup>
         <h1>Group name</h1>
         <h3>Institution</h3>
@@ -29,11 +31,12 @@
         </ul>
       </nav>
       <hr>
+    </div>
     </header>
-    <main>
+    <main class="container">
       {{ content }}
     </main>
-    <footer>
+    <footer class="container">
       <hr>
       <small>Copyright note</small>
     </footer>
