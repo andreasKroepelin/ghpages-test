@@ -18,8 +18,7 @@ header[data-theme="dark"] {
 .team-grid {
   display: grid;
   grid-template-columns: repeat( auto-fill, minmax(15em, 1fr) );
-  grid-template-rows: repeat( auto-fill, minmax(10em, auto) );
-  grid-row-gap: .5em;
+  grid-row-gap: 1em;
   grid-column-gap: 1em;
 }
 
@@ -27,4 +26,5 @@ header[data-theme="dark"] {
   height: 100%;
   display: grid;
   grid-template-columns: 3em auto;
+  grid-column-gap: .5em;
 }
