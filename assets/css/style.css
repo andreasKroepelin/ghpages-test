@@ -25,6 +25,6 @@ header[data-theme="dark"] {
 .team-panel {
   height: 100%;
   display: grid;
-  grid-template-columns: 3em auto;
+  grid-template-columns: 5em auto;
   grid-column-gap: .5em;
 }
