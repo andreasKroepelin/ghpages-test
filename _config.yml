@@ -1,3 +1,5 @@
 collections:
-  - team
-  - lectures
+  team:
+    output: true
+  lectures:
+    output: true
