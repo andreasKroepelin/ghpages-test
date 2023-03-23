@@ -3,7 +3,9 @@ layout: default
 title: Team
 ---
 
+<h2>Our Team</h2>
 
+<div class="grid">
 {% for member in site.team %}
 <a href="{{ member.url }}" style="text-decoration: none; color: inherit;">
 <article>
@@ -17,3 +19,4 @@ title: Team
 </article>
 </a>
 {% endfor %}
+</div>
