@@ -7,16 +7,14 @@ layout: member
 ---
 
 ## CV
-#### 2010: PhD in Numberstuff
-University of Numbers
 
-Thesis: "On the number 1250896146"
-
-#### 2009: M.Sc. Advanced Number Studies
-University of Numbers
-
-#### 2008: B.Sc. Counting without Fingers
-University of Digits
+- 2010: **PhD in Numberstuff** \
+  University of Numbers \
+  Thesis: "On the number 1250896146"
+- 2009: **M.Sc. Advanced Number Studies** \
+  University of Numbers
+- 2008: **B.Sc. Counting without Fingers**
+  University of Digits
 
 ## Publications  
 
