@@ -5,9 +5,9 @@ group.
 
 ## How to maintain the website
 
-1. Update the files `_includes/about.md` and `_includes/contact.md` for the
+1. Update the files `_includes/about.html` and `_includes/contact.html` for the
    landing page.
-2. Write news in the `_posts` directory following the file format `yyyy-mm-dd-title.md`. \
+2. Write news in the `_posts` directory following the file format `yyyy-mm-dd-title.md`.
 3. Update sites of group members in the `_team` directory.
 4. Update sites of lectures in the `_lectures` directory. \
    Set `state: current`, `state: planned`, or `state: old` in the frontmatter
