@@ -12,6 +12,11 @@ In my research, I focus on large numbers that are still undiscovered.
 My current goal is to find a number with more than 200 digits in the
 [Project 200](/ghpages-test/projects/project-200.html).
 
+## Publications
+{% include publication-list.html name="anton" %}
+
+## Other stuff
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodo consequat. Duis aute irure dolor in longinquitate levis, in gravitate brevis soleat esse, ut eius magnitudinem celeritas, diuturnitatem allevatio consoletur. Ad ea cum accedit, ut neque divinum numen horreat nec.
 
 Voluptatibus esse deditum dicitis; non posse iucunde vivi, nisi sapienter, honeste iusteque vivatur, nec sapienter, honeste, iuste, nisi iucunde. Neque enim civitas in seditione beata esse potest nec in discordia dominorum domus; quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus.
