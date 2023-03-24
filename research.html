@@ -11,15 +11,13 @@ title: Research
 
 <h3>Current projects</h3>
 <ul>
-{% for project in site.projects %}
-{% if project.state == "current" %}
+{% for project in site.projects | where:"state","current" %}
 <li>
   <a href="{{ project.url | relative_url }}">
   {{ project.name }}
   </a>
   ({{ project.when }})
 </li>
-{% endif %}
 {% else %}
 <li><em>none</em></li>
 {% endfor %}
@@ -27,15 +25,13 @@ title: Research
 
 <h3>Completed projects</h3>
 <ul>
-{% for project in site.projects %}
-{% if project.state == "old" %}
+{% for project in site.projects | where:"state","old" %}
 <li>
   <a href="{{ project.url | relative_url }}">
   {{ project.name }}
   </a>
   ({{ project.when }})
 </li>
-{% endif %}
 {% else %}
 <li><em>none</em></li>
 {% endfor %}
