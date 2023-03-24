@@ -5,5 +5,5 @@ collections:
     output: true
   projects:
     output: true
-  publications: ""
+  publications:
 baseurl: "/ghpages-test"
