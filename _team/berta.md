@@ -18,4 +18,4 @@ layout: member
 
 ## Publications  
 
-{% include publication-list.html name:"berta" %}
+{% include publication-list.html name="berta" %}
