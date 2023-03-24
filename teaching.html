@@ -9,9 +9,13 @@ title: Teaching
   We offer various lectures and seminars regarding numbers.
 </p>
 
+{% assign current_lectures = site.lectures | where:"state","current" %}
+{% assign planned_lectures = site.lectures | where:"state","planned" %}
+{% assign old_lectures = site.lectures | where:"state","old" %}
+
 <h3>Current lectures</h3>
 <ul>
-{% for lecture in site.lectures | where:"state","current" %}
+{% for lecture in current_lectures %}
 <li>
   <a href="{{ lecture.url | relative_url }}">
   {{ lecture.name }}
@@ -28,7 +32,7 @@ title: Teaching
   These lectures are not offered this semester but will be in the future:
 </p>
 <ul>
-{% for lecture in site.lectures | where:"state","planned" %}
+{% for lecture in planned_lectures %}
 <li>
   <a href="{{ lecture.url | relative_url }}">
   {{ lecture.name }}
@@ -45,7 +49,7 @@ title: Teaching
   These lectures are not offered anymore but have been in the past:
 </p>
 <ul>
-{% for lecture in site.lectures | where:"state","old" %}
+{% for lecture in old_lectures %}
 <li>
   <a href="{{ lecture.url | relative_url }}">
   {{ lecture.name }}

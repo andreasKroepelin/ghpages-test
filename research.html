@@ -9,9 +9,12 @@ title: Research
   Here are some of the projects members of this group work and have worked on.
 </p>
 
+{% assign current_projects = site.projects | where:"state","current" %}
+{% assign old_projects = site.projects | where:"state","old" %}
+
 <h3>Current projects</h3>
 <ul>
-{% for project in site.projects | where:"state","current" %}
+{% for project in current_projects %}
 <li>
   <a href="{{ project.url | relative_url }}">
   {{ project.name }}
@@ -25,7 +28,7 @@ title: Research
 
 <h3>Completed projects</h3>
 <ul>
-{% for project in site.projects | where:"state","old" %}
+{% for project in old_projects %}
 <li>
   <a href="{{ project.url | relative_url }}">
   {{ project.name }}
