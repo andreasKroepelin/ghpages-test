@@ -11,15 +11,13 @@ title: Teaching
 
 <h3>Current lectures</h3>
 <ul>
-{% for lecture in site.lectures %}
-{% if lecture.state == "current" %}
+{% for lecture in site.lectures | where:"state","current" %}
 <li>
   <a href="{{ lecture.url | relative_url }}">
   {{ lecture.name }}
   </a>
   ({{ lecture.when }})
 </li>
-{% endif %}
 {% else %}
 <li><em>none</em></li>
 {% endfor %}
@@ -30,15 +28,13 @@ title: Teaching
   These lectures are not offered this semester but will be in the future:
 </p>
 <ul>
-{% for lecture in site.lectures %}
-{% if lecture.state == "planned" %}
+{% for lecture in site.lectures | where:"state","planned" %}
 <li>
   <a href="{{ lecture.url | relative_url }}">
   {{ lecture.name }}
   </a>
   ({{ lecture.when }})
 </li>
-{% endif %}
 {% else %}
 <li><em>none</em></li>
 {% endfor %}
@@ -49,15 +45,13 @@ title: Teaching
   These lectures are not offered anymore but have been in the past:
 </p>
 <ul>
-{% for lecture in site.lectures %}
-{% if lecture.state == "old" %}
+{% for lecture in site.lectures | where:"state","old" %}
 <li>
   <a href="{{ lecture.url | relative_url }}">
   {{ lecture.name }}
   </a>
   ({{ lecture.when }})
 </li>
-{% endif %}
 {% else %}
 <li><em>none</em></li>
 {% endfor %}
