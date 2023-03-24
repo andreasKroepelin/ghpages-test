@@ -18,7 +18,4 @@ layout: member
 
 ## Publications  
 
-- *Numbers of the ancient Romans: What do those letters mean?*, 2015,
-  Journal of New Archeonumerology
-- *Counting in base nine: What to do when losing a finger*, 2012, Journal of
-  Applied Medicine
+{% include publication-list.html name:"berta" %}
